@@ -27,6 +27,7 @@ export const TodoItem: React.FC<Props> = props => {
 
   const onCheckTodo = () => {
     const todoToUpdate = { ...todo, completed: !todo.completed };
+
     onUpdateTodo(todoToUpdate);
   };
 
@@ -43,6 +44,7 @@ export const TodoItem: React.FC<Props> = props => {
 
     if (todo.title === normalizedTitle) {
       setEditedTodo(null);
+
       return;
     }
 
