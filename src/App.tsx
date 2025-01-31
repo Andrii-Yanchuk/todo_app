@@ -54,7 +54,6 @@ export const App: React.FC = () => {
   );
 
   const allTodosCompleted = todos.length === completedTodos;
-  console.log(allTodosCompleted);
 
   const onAddTodo = useCallback(async (todoTitle: string) => {
     setTempTodo({ id: 0, title: todoTitle, completed: false, userId: USER_ID });
