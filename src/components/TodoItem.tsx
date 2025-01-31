@@ -54,6 +54,7 @@ export const TodoItem: React.FC<Props> = props => {
       } else {
         await onUpdateTodo({ ...todo, title: normalizedTitle });
       }
+
       setEditedTodo(null);
     } catch (err) {
       inputRef?.current?.focus();
